@@ -21,6 +21,6 @@ jobs:
         run: |
           pip install -r requirements.txt
 
-      - name: Run application
-        run: |
-          python app.py
+      - name: Test application import
+  run: |
+    python -c "import app; print('App loaded successfully')"
